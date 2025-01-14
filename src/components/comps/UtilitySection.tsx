@@ -14,30 +14,38 @@ const UtilitySection = () => {
   return (
     <div className="p-6 flex gap-6 justify-between items-center max-xl:flex-col max-xl:items-start">
       {/* Input & Filters */}
-      <div className="flex items-center gap-9 max-lg:flex-col max-lg:gap-6">
+      <div className="flex items-center max-sm:items-start gap-9 max-lg:flex-col max-lg:gap-6">
         <div className="flex items-center">
           <Input
-            className="pl-8 w-[364px] border border-gray-300 bg-[url('https://static.thenounproject.com/png/101791-200.png')] bg-no-repeat bg-[10px] bg-[length:17px_17px]"
+            className="pl-8 w-[364px] max-sm:w-[264px] border border-gray-300 bg-[url('https://static.thenounproject.com/png/101791-200.png')] bg-no-repeat bg-[10px] bg-[length:17px_17px]"
             type="text"
             placeholder="Search..."
           />
         </div>
-        <div className="flex items-center gap-9">
+        <div className="flex items-center gap-9 max-sm:gap-5">
           <div className="flex items-center gap-2 cursor-pointer">
-            <LuRows3 className="text-lg" />
-            <p className="text-xs font-medium text-gray-800">1/1 Row</p>
+            <LuRows3 className="text-lg max-sm:text-sm" />
+            <p className="text-xs max-sm:text-[10px] font-medium text-gray-800">
+              1/1 Row
+            </p>
           </div>
           <div className="flex items-center gap-2 cursor-pointer">
-            <LuColumns3 className="text-lg" />
-            <p className="text-xs font-medium text-gray-800">3/3 Column</p>
+            <LuColumns3 className="text-lg max-sm:text-sm" />
+            <p className="text-xs max-sm:text-[10px] font-medium text-gray-800">
+              3/3 Column
+            </p>
           </div>
           <div className="flex items-center gap-2 cursor-pointer">
-            <PiFunnelBold className="text-lg" />
-            <p className="text-xs font-medium text-gray-800">0 Filter</p>
+            <PiFunnelBold className="text-lg max-sm:text-sm" />
+            <p className="text-xs max-sm:text-[10px] font-medium text-gray-800">
+              0 Filter
+            </p>
           </div>
           <div className="flex items-center gap-2 cursor-pointer">
-            <TbArrowsUpDown className="text-lg" />
-            <p className="text-xs font-medium text-gray-800">Sort</p>
+            <TbArrowsUpDown className="text-lg max-sm:text-sm" />
+            <p className="text-xs max-sm:text-[10px] font-medium text-gray-800">
+              Sort
+            </p>
           </div>
         </div>
       </div>
